@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volcano Lovers - Tours de Aventura en Nicaragua</title>
+    <meta
+      name="description"
+      content="Descubre los mejores tours de aventura en Nicaragua con Volcano Lovers. Explora volcanes, playas hermosas y experiencias únicas."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo-container">
+          <img src="images/logo.jpg" alt="Volcano Lovers Logo" class="logo" />
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link" data-i18n="nav-home">Inicio</a></li>
+          <li><a href="#destinations" class="nav-link" data-i18n="nav-destinations">Destinos</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav-about">Nosotros</a></li>
+          <li><a href="#testimonials" class="nav-link" data-i18n="nav-testimonials">Testimonios</a></li>
+          <li><a href="#contact" class="nav-link btn-primary" data-i18n="nav-contact">Contacto</a></li>
+          <li class="toggle-buttons">
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">ES</button>
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title animate-fade-in" data-i18n="hero-title">Nicaragua te sorprenderá</h1>
+        <p class="hero-subtitle animate-fade-in-delay" data-i18n="hero-subtitle">
+          Los tours de aventura más increíbles, pueblos coloniales vibrantes y
+          playas hermosas...
+        </p>
+        <a href="#destinations" class="btn-hero animate-fade-in-delay-2" data-i18n="hero-cta"
+          >Explorar Destinos</a
+        >
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome-content">
+          <h2 class="section-title" data-i18n="welcome-title">Bienvenido a Volcano Lovers</h2>
+          <p class="welcome-text" data-i18n="welcome-text">
+            Somos apasionados por la aventura y queremos compartir contigo las
+            maravillas de Nicaragua. Desde volcanes activos hasta playas
+            paradisíacas, cada tour es una experiencia única diseñada para crear
+            recuerdos inolvidables.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">500+</div>
+              <div class="stat-label" data-i18n="stat-tours">Tours Realizados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">98%</div>
+              <div class="stat-label" data-i18n="stat-satisfaction">Satisfacción</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label" data-i18n="stat-destinations">Destinos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <h2 class="section-title" data-i18n="destinations-title">Descubre Nuestros Destinos</h2>
+        <p class="section-subtitle" data-i18n="destinations-subtitle">
+          Aventuras únicas que te dejarán sin aliento
+        </p>
+
+        <div class="destinations-grid">
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=600&fit=crop"
+                alt="Volcán Telica"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Popular</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Tour de Camping Volcán Telica</h3>
+              <p class="card-description">
+                ¡El volcán Telica es un destino único y encantador! Acampa bajo
+                las estrellas y observa la lava brillante.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">2 días / 1 noche</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop"
+                alt="Cerro Negro"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Extremo</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Volcano Boarding Cerro Negro</h3>
+              <p class="card-description">
+                ¡Cerro Negro es uno de los volcanes más activos de Nicaragua!
+                Deslízate por sus laderas en una tabla.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">1 día</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
+                alt="Isla Juan Venado"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Naturaleza</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Tour Isla Juan Venado</h3>
+              <p class="card-description">
+                Explora manglares, observa vida silvestre y relájate en playas
+                vírgenes de esta reserva natural.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">1 día</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=600&fit=crop"
+                alt="Cañón de Somoto"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Aventura</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Tour Cañón de Somoto</h3>
+              <p class="card-description">
+                Nada y camina a través de este impresionante cañón con
+                formaciones rocosas espectaculares.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">1 día</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=600&fit=crop"
+                alt="Playa Hermosa"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Relax</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Tour de Playas del Pacífico</h3>
+              <p class="card-description">
+                Descubre las mejores playas de Nicaragua, perfectas para surf,
+                natación y atardeceres inolvidables.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">1-2 días</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1555881788-586b5a011f3b?w=800&h=600&fit=crop"
+                alt="City Tour León"
+              />
+              <div class="card-overlay">
+                <span class="card-badge">Cultural</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">City Tour León</h3>
+              <p class="card-description">
+                Explora la ciudad colonial de León, su historia, arquitectura y
+                cultura vibrante.
+              </p>
+              <div class="card-footer">
+                <span class="card-duration">Medio día</span>
+                <a href="#contact" class="card-link">Ver Tour →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="why-title">¿Por qué elegirnos?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3 class="feature-title" data-i18n="feature-1-title">Tours Personalizados</h3>
+            <p class="feature-description" data-i18n="feature-1-desc">
+              Diseñamos cada experiencia según tus preferencias y necesidades
+              específicas.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌟</div>
+            <h3 class="feature-title" data-i18n="feature-2-title">Guías Expertos</h3>
+            <p class="feature-description" data-i18n="feature-2-desc">
+              Nuestros guías locales conocen cada rincón y te brindarán la mejor
+              experiencia.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3 class="feature-title" data-i18n="feature-3-title">Mejores Precios</h3>
+            <p class="feature-description" data-i18n="feature-3-desc">
+              Calidad premium a precios justos. Sin costos ocultos ni sorpresas.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title" data-i18n="feature-4-title">Seguridad Garantizada</h3>
+            <p class="feature-description" data-i18n="feature-4-desc">
+              Tu seguridad es nuestra prioridad. Equipos certificados y
+              protocolos estrictos.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📞</div>
+            <h3 class="feature-title" data-i18n="feature-5-title">Soporte 24/7</h3>
+            <p class="feature-description" data-i18n="feature-5-desc">
+              Estamos disponibles para ti en cualquier momento durante tu
+              aventura.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3 class="feature-title" data-i18n="feature-6-title">Turismo Sostenible</h3>
+            <p class="feature-description" data-i18n="feature-6-desc">
+              Comprometidos con el medio ambiente y las comunidades locales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title" data-i18n="testimonials-title">¿Qué dicen nuestros clientes?</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Una experiencia increíble! El volcano boarding en Cerro Negro fue
+              adrenalina pura. Los guías fueron muy profesionales y atentos."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <div class="author-name">María González</div>
+                <div class="author-location">España</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "El camping en Telica fue mágico. Ver la lava brillante por la
+              noche es algo que nunca olvidaré. Totalmente recomendado!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div class="author-info">
+                <div class="author-name">John Smith</div>
+                <div class="author-location">USA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Excelente servicio desde el primer contacto. Los tours están muy
+              bien organizados y los precios son justos. Volveré sin duda!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <div class="author-name">Ana Martínez</div>
+                <div class="author-location">México</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title" data-i18n="contact-title">Contáctanos</h2>
+            <p class="contact-description" data-i18n="contact-desc">
+              ¿Listo para tu próxima aventura? Escríbenos y diseñaremos el tour
+              perfecto para ti.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <div class="contact-label" data-i18n="contact-email">Email</div>
+                  <a href="mailto:info@volcanolovers.com" class="contact-value"
+                    >info@volcanolovers.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <div class="contact-label" data-i18n="contact-whatsapp">WhatsApp</div>
+                  <a href="tel:+50512345678" class="contact-value"
+                    >+505 1234 5678</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label" data-i18n="contact-location">Ubicación</div>
+                  <div class="contact-value">León, Nicaragua</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name" data-i18n="form-name">Nombre</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="form-email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="tour" data-i18n="form-tour">Tour de Interés</label>
+                <select id="tour" name="tour">
+                  <option value="">Selecciona un tour</option>
+                  <option value="telica">Volcán Telica</option>
+                  <option value="cerro-negro">Cerro Negro Boarding</option>
+                  <option value="juan-venado">Isla Juan Venado</option>
+                  <option value="somoto">Cañón de Somoto</option>
+                  <option value="playas">Playas del Pacífico</option>
+                  <option value="leon">City Tour León</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="form-message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit" data-i18n="form-submit">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-circular.png"
+              alt="Volcano Lovers Logo"
+              class="footer-logo-img"
+            />
+            <p class="footer-tagline" data-i18n="footer-tagline">Aventuras que te dejarán sin aliento</p>
+          </div>
+          <div class="footer-bottom">
+            <p data-i18n="footer-rights">&copy; 2025 by Volcano Lovers. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
