@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Usuario - Volcano Lovers</title>
+    <meta
+      name="description"
+      content="Manual de usuario para navegar y reservar tours en Volcano Lovers."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .manual-section {
+            padding: 120px 0 60px;
+        }
+        .manual-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .manual-content h3 {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .manual-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .manual-content ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .manual-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Volcano Lovers Logo" class="logo" />
+          </a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#home" class="nav-link" data-i18n="nav-home">Inicio</a></li>
+          <li><a href="index.html#destinations" class="nav-link" data-i18n="nav-destinations">Destinos</a></li>
+          <li><a href="index.html#about" class="nav-link" data-i18n="nav-about">Nosotros</a></li>
+          <li><a href="index.html#testimonials" class="nav-link" data-i18n="nav-testimonials">Testimonios</a></li>
+          <li><a href="manual.html" class="nav-link active">Manual</a></li>
+          <li><a href="index.html#contact" class="nav-link btn-primary" data-i18n="nav-contact">Contacto</a></li>
+          <li class="toggle-buttons">
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">ES</button>
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Manual Section -->
+    <section class="manual-section">
+      <div class="container">
+        <div class="manual-content">
+          <h1>Manual de Usuario</h1>
+          <p>Bienvenido a la guía de uso de Volcano Lovers. Aquí encontrarás información sobre cómo navegar por nuestro sitio y reservar tus próximas aventuras.</p>
+
+          <h3>1. Navegación</h3>
+          <p>Nuestro sitio web está diseñado para ser intuitivo. Utiliza el menú superior para acceder rápidamente a las diferentes secciones:</p>
+          <ul>
+            <li><strong>Inicio:</strong> Vuelve a la página principal.</li>
+            <li><strong>Destinos:</strong> Explora nuestra lista de tours disponibles.</li>
+            <li><strong>Nosotros:</strong> Conoce más sobre nuestra misión y valores.</li>
+            <li><strong>Testimonios:</strong> Lee las experiencias de otros viajeros.</li>
+            <li><strong>Contacto:</strong> Encuentra formas de comunicarte con nosotros.</li>
+          </ul>
+
+          <h3>2. Explorar Destinos</h3>
+          <p>En la sección de "Destinos", encontrarás tarjetas con información sobre cada tour. Cada tarjeta muestra una imagen, el nombre del tour, una breve descripción y la duración.</p>
+
+          <h3>3. Cómo Reservar</h3>
+          <p>Para reservar un tour, sigue estos pasos:</p>
+          <ol>
+            <li>Ve a la sección de <strong>Contacto</strong> al final de la página principal.</li>
+            <li>Completa el formulario con tu nombre, correo electrónico y selecciona el tour de tu interés.</li>
+            <li>Escribe un mensaje si tienes preguntas específicas o requerimientos especiales.</li>
+            <li>Haz clic en "Enviar Mensaje". Nuestro equipo te contactará a la brevedad para confirmar detalles y pagos.</li>
+          </ol>
+
+          <h3>4. Idioma y Modo Oscuro</h3>
+          <p>Puedes cambiar el idioma del sitio entre Español e Inglés usando el botón "ES/EN" en el menú. También puedes activar el modo oscuro haciendo clic en el icono de la luna.</p>
+
+          <h3>5. Soporte</h3>
+          <p>Si necesitas ayuda adicional, puedes contactarnos directamente a través de WhatsApp o correo electrónico, cuyos enlaces encontrarás en la sección de contacto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="images/logo-circular.png"
+              alt="Volcano Lovers Logo"
+              class="footer-logo-img"
+            />
+            <p class="footer-tagline" data-i18n="footer-tagline">Aventuras que te dejarán sin aliento</p>
+          </div>
+          <div class="footer-bottom">
+            <p data-i18n="footer-rights">&copy; 2025 by Volcano Lovers. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
