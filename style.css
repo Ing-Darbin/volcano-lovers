@@ -82,12 +82,12 @@ body.dark-mode {
   --light-gray: #475569;
   --lighter-gray: #1e293b;
   --white: #0f172a;
-  
+
   /* Dark backgrounds */
   --bg-primary: #0f172a;
   --bg-secondary: #1e293b;
   --bg-tertiary: #334155;
-  
+
   /* Adjusted shadows for dark mode */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4),
@@ -97,7 +97,7 @@ body.dark-mode {
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
     0 10px 10px -5px rgba(0, 0, 0, 0.4);
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
-  
+
   /* Yellow accent for titles */
   --title-color: #fbbf24;
   --title-glow: 0 0 20px rgba(251, 191, 36, 0.3);
@@ -379,8 +379,7 @@ body.dark-mode .feature-card {
 body.dark-mode .feature-card:hover {
   border-color: #fbbf24;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6),
-    0 10px 10px -5px rgba(0, 0, 0, 0.4),
-    0 0 20px rgba(251, 191, 36, 0.3);
+    0 10px 10px -5px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 191, 36, 0.3);
 }
 
 /* Dark Mode Hero Subtitle */
@@ -391,11 +390,7 @@ body.dark-mode .hero-subtitle {
 
 /* Dark Mode Footer */
 body.dark-mode .footer {
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #1e293b 100%
-  );
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   border-top: 1px solid rgba(251, 191, 36, 0.2);
 }
 
@@ -1095,6 +1090,29 @@ body.dark-mode .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--light-gray);
   font-size: 0.9rem;
+}
+
+.footer-guide {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.footer-guide-link {
+  color: #666;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-guide-link:hover {
+  color: var(--white);
+}
+
+body.dark-mode .footer-guide-link {
+  color: var(--gray);
+}
+
+body.dark-mode .footer-guide-link:hover {
+  color: var(--brand-blue);
 }
 
 /* Responsive Design */
