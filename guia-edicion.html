@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Edición - Volcano Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .guide-section {
+            padding: 120px 0 60px;
+        }
+        .guide-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        .guide-content h3 {
+            color: var(--secondary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .guide-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .guide-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .guide-content li {
+            margin-bottom: 0.8rem;
+        }
+        .step-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .dark-mode .step-box {
+            background-color: #2d2d2d;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #d63384;
+        }
+        .dark-mode code {
+            background-color: #444;
+            color: #ff85c2;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Volcano Lovers Logo" class="logo" />
+          </a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Volver al Sitio</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Guide Section -->
+    <section class="guide-section">
+      <div class="container">
+        <div class="guide-content">
+          <h1>Guía de Edición del Sitio Web</h1>
+          <p>Esta guía te explicará cómo realizar cambios básicos en tu sitio web (como textos, precios o imágenes) sin necesidad de saber programación, utilizando la interfaz de GitHub.</p>
+
+          <div class="step-box">
+            <strong>Importante:</strong> Todos los cambios que hagas se reflejarán en el sitio web público unos minutos después de guardarlos.
+          </div>
+
+          <h2>1. Acceder a los Archivos</h2>
+          <p>Para editar el sitio, primero debes ir a donde están guardados los archivos:</p>
+          <ol>
+            <li>Ve a tu repositorio en GitHub: <a href="https://github.com/Ing-Darbin/volcano-lovers" target="_blank" rel="noopener">https://github.com/Ing-Darbin/volcano-lovers</a></li>
+            <li>Asegúrate de haber iniciado sesión con tu cuenta.</li>
+          </ol>
+
+          <h2>2. Editar Textos (index.html)</h2>
+          <p>La mayoría del contenido (títulos, descripciones, precios) está en el archivo <code>index.html</code>.</p>
+          
+          <h3>Pasos para editar:</h3>
+          <ol>
+            <li>En la lista de archivos, haz clic en <strong>index.html</strong>.</li>
+            <li>Busca el icono de un lápiz ✏️ en la esquina superior derecha del archivo (dice "Edit this file"). Haz clic en él.</li>
+            <li>Ahora verás el código. No te asustes, solo busca el texto que quieres cambiar.
+                <ul>
+                    <li>Usa <code>Ctrl + F</code> (o <code>Cmd + F</code> en Mac) para buscar la frase exacta que quieres modificar.</li>
+                </ul>
+            </li>
+            <li>Cambia el texto que está en color blanco o negro (dependiendo de tu tema). <strong>¡Cuidado!</strong> No borres las etiquetas que están entre <code>&lt; &gt;</code> (como <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>). Solo cambia el texto que está dentro de ellas.</li>
+            <li>Una vez hecho el cambio, baja hasta el final de la página a la sección <strong>"Commit changes"</strong>.</li>
+            <li>Escribe un mensaje corto describiendo qué cambiaste (ej: "Actualizar precio del tour Telica").</li>
+            <li>Haz clic en el botón verde <strong>"Commit changes"</strong>.</li>
+          </ol>
+
+          <h2>3. Cambiar Imágenes</h2>
+          <p>Para cambiar una imagen, lo más fácil es subir una nueva imagen con el mismo nombre que la anterior, o subir una nueva y cambiar el nombre en el código.</p>
+
+          <h3>Opción A: Reemplazar imagen existente (Más fácil)</h3>
+          <ol>
+            <li>Mira en la carpeta <code>images</code> qué nombre tiene la imagen que quieres cambiar (ej: <code>logo.jpg</code>).</li>
+            <li>Prepara tu nueva imagen en tu computadora y ponle <strong>exactamente el mismo nombre</strong>.</li>
+            <li>En GitHub, entra a la carpeta <code>images</code>.</li>
+            <li>Haz clic en <strong>"Add file"</strong> > <strong>"Upload files"</strong>.</li>
+            <li>Arrastra tu nueva imagen.</li>
+            <li>Haz clic en <strong>"Commit changes"</strong>. GitHub reemplazará la vieja por la nueva.</li>
+          </ol>
+
+          <h3>Opción B: Usar una imagen nueva</h3>
+          <ol>
+            <li>Sube tu imagen a la carpeta <code>images</code> (ej: <code>nuevo-volcan.jpg</code>).</li>
+            <li>Ve al archivo <code>index.html</code> y edítalo.</li>
+            <li>Busca donde se usa la imagen anterior (busca <code>src="images/..."</code>).</li>
+            <li>Cambia el nombre por el de tu nueva imagen: <code>src="images/nuevo-volcan.jpg"</code>.</li>
+            <li>Guarda los cambios ("Commit changes").</li>
+          </ol>
+
+          <h2>4. ¿Cuándo se ven los cambios?</h2>
+          <p>Después de hacer clic en "Commit changes", GitHub procesará los cambios automáticamente. Esto suele tomar entre <strong>1 a 3 minutos</strong>.</p>
+          <p>Si no ves los cambios, intenta refrescar tu página web (a veces es necesario borrar la caché del navegador).</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-bottom">
+            <p>&copy; 2025 Volcano Lovers.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
